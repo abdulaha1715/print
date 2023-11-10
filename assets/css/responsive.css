@@ -73,6 +73,13 @@
 
 /* 03. Medium devices (tablets, less than 992px) */
 @media screen and (max-width: 991.98px) {
+
+    .modal-content {
+        min-width: 500px;
+    }
+    .modal-content .modal-body {
+        height: 350px;
+    }
     .iframe-wrapper {
         padding-top: 52%;
     }
@@ -108,6 +115,39 @@
 
 /* 04. Small devices (landscape phones, less than 768px)  */
 @media screen and (max-width: 767.98px) {
+    nav.navbar {
+        justify-content: space-between;
+    }
+    .modal-content {
+        min-width: 80%;
+        max-width: 80%;
+        margin: 0 auto;
+    }
+    .modal-content .modal-body {
+        height: 280px;
+    }
+    ul.top-icons {
+        padding: 0 20px;
+        display: block;
+    }
+
+    ul.top-icons li {
+        display: inline-block;
+        padding-right: 8px;
+    }
+
+    ul.top-icons li a {
+        color: #212529 !important;
+    }
+
+    ul.top-icons li a svg {
+        width: 20px;
+        height: 20px;
+    }
+
+    li.nav-item.dropdown {
+        padding: 0;
+    }
     .c-content-box h3 {
         font-size: 24px;
         line-height: 29px;

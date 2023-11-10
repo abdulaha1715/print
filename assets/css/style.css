@@ -138,6 +138,12 @@ footer .page-text-heading {
 
 
 header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 3;
+    padding: 5px 0;
+    background: #FFFFFF;
     box-shadow: 0 0 10px rgba(0,0,0,.1);
 }
 
@@ -162,6 +168,26 @@ ul.navbar-nav {
 
 ul.navbar-nav li {
     margin-left: 0;
+    padding: 0 12px 0 0;
+}
+
+ul.navbar-nav li.nav-item.lan {
+    padding-right: 0 !important;
+    padding-left: 10px;
+}
+
+ul.navbar-nav li a {}
+
+a.nav-link.color-rainbow-btn {
+    color: #FFFFFF;
+    font-size: 16px;
+    padding: 4px 25px;
+    border-radius: 4px;
+}
+
+ul.navbar-nav li a img {
+    width: 32px;
+    height: 25px;
 }
 
 a#navbarDropdownMenuLink::after {
@@ -210,7 +236,33 @@ a.nav-link.active {
     color: var(--primary);
 }
 
+ul.top-icons {
+    display: none;
+}
 
+ul.dropdown-menu.show {
+    width: 16rem;
+    padding: 0;
+}
+
+ul.dropdown-menu.show li {
+    padding: 0;
+    margin: 8px 0;
+}
+
+ul.dropdown-menu.show li a {
+    color: #212529;
+    font-size: 18px;
+    display: inline;
+    margin: 4px 16px;
+    padding: 0;
+    border-radius: 4px;
+}
+
+ul.dropdown-menu.show li a.color-rainbow-btn {
+    color: #ffffff;
+    padding: 4px 16px !important;
+}
 
 .section-title.page-text-heading {
     margin-bottom: 3rem!important;
@@ -224,7 +276,9 @@ a.nav-link.active {
     line-height: 3.5rem;
 }
 
-section.hero-area {}
+section.hero-area {
+    padding-top: 70px;
+}
 
 section.hero-area img {
     max-width: 600px;
@@ -555,6 +609,40 @@ p.about-us-text {
     height: 450px;
 }
 
+
+
+
+
+
+span.cam-icon {
+    font-size: 34px;
+}
+
+.video-set {}
+
+.video-set ul {
+    display: flex;
+    justify-content: space-around;
+    padding: 0 40px;
+}
+
+.video-set ul li {
+    display: block;
+    padding: 25px;
+}
+
+.modal-content {
+    min-width: 600px;
+}
+
+.modal-content .modal-body {
+    height: 350px;
+}
+
+.modal-content .modal-body iframe {
+    width: 100%;
+    height: 100%;
+}
 
 
 /**/
