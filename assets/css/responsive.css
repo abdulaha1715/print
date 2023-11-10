@@ -59,6 +59,13 @@
 
 /* 02. Large devices (desktops, less than 1200px) */
 @media screen and (max-width: 1199.98px) {
+    .iframe-wrapper {
+        padding-top: 36%;
+    }
+
+    ul.navbar-nav {
+        padding: 0 20px;
+    }
     .flex-xl-row {
         flex-direction: row!important;
     }
@@ -66,6 +73,9 @@
 
 /* 03. Medium devices (tablets, less than 992px) */
 @media screen and (max-width: 991.98px) {
+    .iframe-wrapper {
+        padding-top: 52%;
+    }
     section.why-us-area .content {
         max-width: 880px;
     }
@@ -120,7 +130,7 @@
     }
 
     section.hero-area img {
-        max-width: 450px;
+        max-width: 280px;
     }
 
     .section-title.page-text-heading h2 {
@@ -151,7 +161,7 @@
         padding-left: 0;
     }
     .c-content-box {
-        padding: 10px 65px;
+        padding: 10px 20px 10px 45px;
     }
 
     .why-us-content .col {
@@ -189,6 +199,8 @@
     }
 
     #lightGallery-slider .info .desc {
+        left: 0;
+        bottom: 20px;
     }
     .why-us-content img {
         display: none;
@@ -202,10 +214,52 @@
     img.trademark-img {
         width: 350px;
     }
+
+    a#navbarDropdownMenuLink {
+        background: transparent;
+    }
+
+    .dropdown-toggle::after {
+        content: none;
+    }
+
+    a#navbarDropdownMenuLink button {
+        background: transparent;
+        border: none;
+        font-size: 35px;
+        margin: 0;
+        padding: 0;
+    }
+
+    a#navbarDropdownMenuLink button svg {
+        fill: rgba(33,37,41,.75);
+        margin-top: -10px;
+    }
+    ul.navbar-nav.mobile {
+        display: flex;
+    }
+
+    ul.navbar-nav.large {
+        display: none;
+    }
+    p.about-us-text {
+        padding-left: 0;
+    }
+    .why-us-content {
+        max-width: 500px;
+        margin: 0 auto;
+    }
+    .content-area.horizontal-line .c-content-box:nth-child(2) {
+        display: none;
+    }
 }
 
 /* 05. X-Small devices (portrait phones, less than 576px) */
 @media only screen and (max-width: 575px) {
+    .iframe-wrapper {
+        padding-top: 75%;
+        margin-top: -10%;
+    }
     .flex-sm-column {
         flex-direction: column!important;
     }
@@ -219,5 +273,12 @@
     }
     .vertical-separator {
         height: 200px;
+    }
+    .c-content-box {
+        padding: 10px 50px;
+        text-align: center;
+    }
+    p.about-us-text {
+        text-align: center;
     }
 }

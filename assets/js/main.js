@@ -17,7 +17,18 @@
     jQuery(document).ready(function($) {
 
         $(".see-more-btn").click(function(){
-          $(".more-content").toggleClass("block");
+          $(".more-content").addClass("block");
+          $(".see-less-btn").addClass("block");
+          $(".see-more-btn").addClass("d-none");
+        });
+        $(".see-less-btn").click(function(){
+          // $(".see-more-btn").removeClass("block");
+          // $(".more-content").removeClass("block");
+
+
+          $(".more-content").removeClass("block");
+          $(".see-less-btn").removeClass("block");
+          $(".see-more-btn").removeClass("d-none");
         });
 
         $("#lightGallery").lightGallery({
