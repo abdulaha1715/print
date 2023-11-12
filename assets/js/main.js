@@ -38,6 +38,43 @@
             desc:true,
             mobileSrc:true
         });
+
+        // Initialize Wistia API
+        window._wq = window._wq || [];
+
+        // Bootstrap Modal Close Event
+        $('#modelOne').on('hidden.bs.modal', function () {
+        // Pause Wistia Video
+            _wq.push({ id: 'z23x55q96i', onReady: function (video) {
+                video.pause();
+            }});
+        });
+
+        // Bootstrap Modal Close Event
+        $('#modelTwo').on('hidden.bs.modal', function () {
+        // Pause Wistia Video
+            _wq.push({ id: 'a9b68ajeny', onReady: function (video) {
+                video.pause();
+            }});
+        });
+
+        // Bootstrap Modal Close Event
+        $('#modelThree').on('hidden.bs.modal', function () {
+        // Pause Wistia Video
+            _wq.push({ id: 'cq4r3a9ai8', onReady: function (video) {
+                video.pause();
+            }});
+        });
+
+        // Bootstrap Modal Close Event
+        $('#modelFour').on('hidden.bs.modal', function () {
+        // Pause Wistia Video
+            _wq.push({ id: 'rvu32c5fym', onReady: function (video) {
+                video.pause();
+            }});
+        });
+
+
         
 
     });
