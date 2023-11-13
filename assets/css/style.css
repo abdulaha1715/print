@@ -23,6 +23,10 @@
  */
 
 /* 01. Default css */
+html { 
+    scroll-behavior: smooth; 
+}
+
 body {
     font-family: var(--bs-font-sans-serif);
 }
@@ -180,7 +184,6 @@ ul.navbar-nav li a {}
 
 a.nav-link.color-rainbow-btn {
     color: #FFFFFF;
-    font-size: 16px;
     padding: 4px 25px;
     border-radius: 4px;
 }
@@ -242,26 +245,35 @@ ul.top-icons {
 
 ul.dropdown-menu.show {
     width: 16rem;
-    padding: 0;
+    padding: 8px 0;
 }
 
 ul.dropdown-menu.show li {
     padding: 0;
-    margin: 8px 0;
+    margin: 0 10px;
 }
 
 ul.dropdown-menu.show li a {
     color: #212529;
     font-size: 18px;
-    display: inline;
-    margin: 4px 16px;
-    padding: 0;
+    display: block;
+    margin: 0 0;
+    padding: 5px 8px;
     border-radius: 4px;
 }
 
 ul.dropdown-menu.show li a.color-rainbow-btn {
     color: #ffffff;
     padding: 4px 16px !important;
+}
+
+ul.dropdown-menu.show li a:hover {
+    color: #FFFFFF;
+    background: #0d6efd;
+}
+
+ul.dropdown-menu.show li a:hover i {
+    color: #0d6efd;
 }
 
 .section-title.page-text-heading {
@@ -623,7 +635,7 @@ span.cam-icon {
 .video-set ul {
     display: flex;
     justify-content: space-around;
-    padding: 0 40px;
+    padding: 0 95px;
 }
 
 .video-set ul li {
