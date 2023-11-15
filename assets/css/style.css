@@ -634,15 +634,16 @@ span.cam-icon {
 
 .video-set ul {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    justify-items: left;
-    padding: 0 100px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+    justify-items: center;
+    padding: 0 122px;
 }
 
 .video-set ul li {
     display: block;
-    padding: 25px;
-    margin-left: 110px;
+    padding: 25px 0;
+    margin-left: 0;
 }
 
 .video-set.mobile, .image-set.mobile {
@@ -667,15 +668,24 @@ span.cam-icon {
     height: 100%;
 }
 
+.tablet,
+.mobile-one,
+.mobile-two {
+    display: none;
+}
+
 
 /**/
 ul#lightGallery {
     align-items: center;
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* display: flex; */
     flex-wrap: wrap;
     gap: 2rem;
     justify-content: center;
     margin-bottom: 40px;
+    padding: 0 122px;
 }
 
 ul#lightGallery li {

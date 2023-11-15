@@ -22,8 +22,9 @@
 
 /* 01. X-Large devices (large desktops, less than 1400px) */
 @media screen and (max-width: 1399.98px) {
-    .video-set ul {
-        padding: 0 0px;
+    .video-set ul,
+    ul#lightGallery {
+        padding: 0 80px;
     }
     ul.dropdown-menu.show {
         position: absolute;
@@ -70,13 +71,13 @@
         padding: 0 20px;
     }
     .flex-xl-row {
-        flex-direction: row!important;
+        flex-direction: row !important;
     }
 }
 @media screen and (max-width: 1155.98px) {
-    .video-set ul {
-        padding: 0 0px;
-        justify-items: center;
+    .video-set ul,
+    ul#lightGallery {
+        padding: 0 20px;
     }
     .video-set ul li {
         margin-left: 0;
@@ -85,39 +86,63 @@
 
 /* 03. Medium devices (tablets, less than 992px) */
 @media screen and (max-width: 991.98px) {
-    .video-set.desktop {}
+    .video-set.desktop {
+    }
 
-    .video-set.desktop ul li:nth-child(2) {
+    .video-set.desktop ul,
+    .image-set.desktop ul#lightGallery {
+        padding: 0 100px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .video-set.tablet ul li:nth-child(1),
+    .image-set.tablet ul li:nth-child(1) {
         display: none;
     }
 
-    .image-set.desktop {}
-
-    .video-set ul {
-        justify-items: center;
+    .video-set.desktop ul li:nth-child(3),
+    .video-set.desktop ul li:nth-child(4) {
+        display: none;
     }
 
-    .video-set ul li {
-        margin-left: 110px;
+    .image-set.desktop {
     }
 
-    .image-set.desktop ul#lightGallery li:nth-child(3), 
+    .image-set.desktop ul#lightGallery li:nth-child(3),
     .image-set.desktop ul#lightGallery li:nth-child(4) {
         display: none;
     }
 
-    .video-set.mobile,
-    .image-set.mobile {
+    .video-set.tablet {
+    }
+
+    .video-set.tablet ul {
+        padding: 0 100px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .image-set.tablet {
+    }
+
+    .image-set.tablet ul#lightGallery {
+        padding: 0 100px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .video-set ul li {
+        padding: 15px 0 20px 0;
+    }
+
+    ul#lightGallery {
+        margin: 0;
+    }
+
+    section.prints-area h5 {
+        margin-top: 40px;
+    }
+
+    .tablet {
         display: block;
-    }
-
-    .video-set.mobile ul li:nth-child(1) {
-        display: none;
-    }
-
-    .image-set.mobile ul#lightGallery li:nth-child(1), 
-    .image-set.mobile ul#lightGallery li:nth-child(2) {
-        display: none;
     }
 
     .modal-content {
@@ -161,17 +186,55 @@
 
 /* 04. Small devices (landscape phones, less than 768px)  */
 @media screen and (max-width: 767.98px) {
-    ul#lightGallery {
-        column-gap: 15rem;
+    .video-set ul,
+    .image-set ul {
+        grid-template-columns: repeat(1, 1fr) !important;
     }
-    .video-set ul {
+    .video-set.desktop ul li:nth-child(2) {
+        display: none;
+    }
+
+    .image-set.desktop ul#lightGallery li:nth-child(2) {
+        display: none;
+    }
+
+    .video-set.tablet ul li:nth-child(1),
+    .image-set.tablet ul li:nth-child(1) {
         display: block;
-        text-align: center;
-        padding: 0 0;
     }
-    .video-set ul li {
-        margin: 0;
-        padding-top: 0;
+
+    .video-set.tablet ul li:nth-child(2),
+    .video-set.tablet ul li:nth-child(3) {
+        display: none;
+    }
+
+    .image-set.tablet ul#lightGallery li:nth-child(2) {
+        display: none;
+    }
+
+    .image-set.tablet ul#lightGallery li:nth-child(3),
+    .image-set.tablet ul#lightGallery li:nth-child(4) {
+        display: none;
+    }
+
+    .tablet,
+    .mobile-one,
+    .mobile-two {
+        display: block;
+    }
+    section.prints-area h5 {
+        padding: 20px;
+    }
+
+    .video-set,
+    .image-set {
+    }
+
+    .video-set ul,
+    .image-set ul {
+        padding: 0 !important;
+        max-width: 300px;
+        margin: 0 auto !important;
     }
     nav.navbar {
         justify-content: space-between;
@@ -330,7 +393,7 @@
     }
 
     a#navbarDropdownMenuLink button svg {
-        fill: rgba(33,37,41,.75);
+        fill: rgba(33, 37, 41, 0.75);
         margin-top: -10px;
     }
     ul.navbar-nav.mobile {
@@ -354,12 +417,16 @@
 
 /* 05. X-Small devices (portrait phones, less than 576px) */
 @media only screen and (max-width: 575px) {
+    .video-set ul,
+    .image-set ul {
+        padding: 0 20px !important;
+    }
     .iframe-wrapper {
         padding-top: 75%;
         margin-top: -10%;
     }
     .flex-sm-column {
-        flex-direction: column!important;
+        flex-direction: column !important;
     }
     .content-area.horizontal-line {
         display: block;
