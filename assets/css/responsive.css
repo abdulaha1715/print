@@ -88,6 +88,9 @@
 @media screen and (max-width: 991.98px) {
     .video-set.desktop {
     }
+    ul#lightGalleryT {
+        grid-template-columns: repeat(2, 1fr);
+    }
 
     .video-set.desktop ul,
     .image-set.desktop ul#lightGallery {
@@ -135,6 +138,12 @@
 
     ul#lightGallery {
         margin: 0;
+    }
+
+    .video-set ul, .image-set ul {
+        padding: 0 !important;
+        max-width: 600px;
+        margin: 0 auto !important;
     }
 
     section.prints-area h5 {
@@ -201,6 +210,11 @@
     .video-set.tablet ul li:nth-child(1),
     .image-set.tablet ul li:nth-child(1) {
         display: block;
+    }
+ 
+    .image-set.tablet ul li:nth-child(2),
+    .image-set.tablet ul li:nth-child(3) {
+        display: none;
     }
 
     .video-set.tablet ul li:nth-child(2),

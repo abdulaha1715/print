@@ -676,7 +676,7 @@ span.cam-icon {
 
 
 /**/
-ul#lightGallery {
+ul.gallery {
     align-items: center;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
@@ -688,7 +688,7 @@ ul#lightGallery {
     padding: 0 122px;
 }
 
-ul#lightGallery li {
+ul.gallery li {
     border-image: var(--border-gradient);
     border-image-slice: 1;
     border-style: solid;
@@ -696,7 +696,7 @@ ul#lightGallery li {
     padding: 1rem;
 }
 
-ul#lightGallery li img {
+ul.gallery li img {
     width: 225px;
     height: 300px;
 }

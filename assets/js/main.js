@@ -39,6 +39,30 @@
             mobileSrc:true
         });
 
+        $("#lightGalleryT").lightGallery({
+            mode:"fade",
+            speed:800,
+            caption:true,
+            desc:true,
+            mobileSrc:true
+        });
+
+        $("#lightGallerymo").lightGallery({
+            mode:"fade",
+            speed:800,
+            caption:true,
+            desc:true,
+            mobileSrc:true
+        });
+        
+        $("#lightGallerymt").lightGallery({
+            mode:"fade",
+            speed:800,
+            caption:true,
+            desc:true,
+            mobileSrc:true
+        });
+
         // Initialize Wistia API
         window._wq = window._wq || [];
 
