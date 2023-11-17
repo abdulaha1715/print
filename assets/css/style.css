@@ -646,10 +646,6 @@ span.cam-icon {
     margin-left: 0;
 }
 
-.video-set.mobile, .image-set.mobile {
-    display: none;
-}
-
 .modal-content {
     min-width: 600px;
 }
@@ -667,13 +663,6 @@ span.cam-icon {
     width: 100%;
     height: 100%;
 }
-
-.tablet,
-.mobile-one,
-.mobile-two {
-    display: none;
-}
-
 
 /**/
 ul#lightGallery {

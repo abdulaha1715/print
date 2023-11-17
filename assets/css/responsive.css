@@ -91,42 +91,15 @@
 
     .video-set.desktop ul,
     .image-set.desktop ul#lightGallery {
-        padding: 0 100px;
+        padding: 0;
+        width: 600px;
+        margin: 0 auto !important;
         grid-template-columns: repeat(2, 1fr);
     }
 
-    .video-set.tablet ul li:nth-child(1),
-    .image-set.tablet ul li:nth-child(1) {
-        display: none;
-    }
-
-    .video-set.desktop ul li:nth-child(3),
+    .video-set.desktop ul li:nth-child(2),
     .video-set.desktop ul li:nth-child(4) {
         display: none;
-    }
-
-    .image-set.desktop {
-    }
-
-    .image-set.desktop ul#lightGallery li:nth-child(3),
-    .image-set.desktop ul#lightGallery li:nth-child(4) {
-        display: none;
-    }
-
-    .video-set.tablet {
-    }
-
-    .video-set.tablet ul {
-        padding: 0 100px;
-        grid-template-columns: repeat(2, 1fr);
-    }
-
-    .image-set.tablet {
-    }
-
-    .image-set.tablet ul#lightGallery {
-        padding: 0 100px;
-        grid-template-columns: repeat(2, 1fr);
     }
 
     .video-set ul li {
@@ -139,10 +112,6 @@
 
     section.prints-area h5 {
         margin-top: 40px;
-    }
-
-    .tablet {
-        display: block;
     }
 
     .modal-content {
@@ -186,6 +155,18 @@
 
 /* 04. Small devices (landscape phones, less than 768px)  */
 @media screen and (max-width: 767.98px) {
+
+    .video-set {
+        margin-bottom: 20px;
+    }
+
+    .video-set ul {
+        gap: 0;
+    }
+
+    .video-set ul li {
+        padding: 10px 0 0 0;
+    }
     .video-set ul,
     .image-set ul {
         grid-template-columns: repeat(1, 1fr) !important;
@@ -194,40 +175,8 @@
         display: none;
     }
 
-    .image-set.desktop ul#lightGallery li:nth-child(2) {
-        display: none;
-    }
-
-    .video-set.tablet ul li:nth-child(1),
-    .image-set.tablet ul li:nth-child(1) {
-        display: block;
-    }
-
-    .video-set.tablet ul li:nth-child(2),
-    .video-set.tablet ul li:nth-child(3) {
-        display: none;
-    }
-
-    .image-set.tablet ul#lightGallery li:nth-child(2) {
-        display: none;
-    }
-
-    .image-set.tablet ul#lightGallery li:nth-child(3),
-    .image-set.tablet ul#lightGallery li:nth-child(4) {
-        display: none;
-    }
-
-    .tablet,
-    .mobile-one,
-    .mobile-two {
-        display: block;
-    }
     section.prints-area h5 {
         padding: 20px;
-    }
-
-    .video-set,
-    .image-set {
     }
 
     .video-set ul,
